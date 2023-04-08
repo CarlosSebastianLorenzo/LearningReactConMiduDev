@@ -1,0 +1,74 @@
+.tw-followCard, .tw-followFigure{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.tw-followCard{
+    background: #333;
+    border-radius: 2em;
+    justify-content: space-between;
+}
+.tw-followCard:hover{
+    background: #393939;
+}
+.tw-followImg{
+    margin: .5em;
+    max-height: 5em;
+    width:5em;
+    background-color: #aca;
+    border-radius: 1.5em;
+}
+.tw-followFigcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tw-followFigcaption>p{
+    color: #aaa;
+}
+.tw-followAnchor{
+    text-decoration: none;
+    color: #ddd;
+}
+.tw-followCard>button{
+    border-radius: 25px;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin: .5em;
+    width: 10em;
+}
+.tw-followCard>button>span:nth-child(2){
+    display: none;
+}
+.tw-followButton{
+    background-color: black;
+    color: #fff;
+    border: black solid .01em;
+}
+.tw-unfollowButton{
+    background-color: transparent;
+    color: #aaa;
+    border: black solid .01em;
+}
+.tw-followButton:hover{
+    background-color: #222;
+    transition: background-color .2s ease;
+}
+.tw-unfollowButton:hover{
+    background-color: #ff000050;
+    color: red;
+    border: red solid .01em;
+    transition: background-color .2s ease-in-out;
+}
+.tw-unfollowButton:hover>span:nth-child(1){
+    display: none;
+}
+.tw-unfollowButton:hover>span:nth-child(2){
+    display: block;
+}
